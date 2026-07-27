@@ -40,7 +40,7 @@ if [ ! -f "/etc/apt/sources.list" ]; then
 fi
 
 cd /tmp
-wget https://apt.llvm.org/llvm.sh
+wget --no-check-certificate https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 ./llvm.sh $VERSION all
 rm llvm.sh
